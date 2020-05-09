@@ -5,7 +5,7 @@
 
 .column {
   float: left;
-  width: 33.33%;
+  width: 31%;
   padding: 5px;
   box-sizing: border-box;
 }
@@ -571,11 +571,23 @@ body {
 .pages-content-grey {
   background-color: #5a5757;
   color: #2dafd4;
+  -webkit-box-sizing: content-box !important;
+    -moz-box-sizing: content-box !important;
+    box-sizing: content-box !important;
+  box-sizing: inherit;
   max-width: 100%;
   margin: 0 auto;
   word-spacing: 1px;
   height: 15vh;
   text-align: center;
+}
+
+*, ::after, ::before {
+  -webkit-box-sizing: content-box !important;
+    -moz-box-sizing: content-box !important;
+    box-sizing: content-box !important;
+/*    This was added as border-box was being inherited by scss and messing everything up 
+    leaving a blank line on the right hand side*/
 }
 
 .pages-content-grey h2 {
@@ -858,13 +870,6 @@ blockquote .svg-inline--fa {
   color: #2b073b;
 }
 
-/*.blog-column p {
-    padding: 1rem 0 1rem 0;
-    width: 80%;
-    margin: 0 auto;
-    line-height: 2.2em;
-}*/
-
 
 .blog-narrow {
   width: 80%;
@@ -907,74 +912,6 @@ blockquote .svg-inline--fa {
   padding-top: 5rem;
 }
 
-/*============= PORTFOLIO SECTION =============*/
-
-.row.padding {
-  padding: 2rem 0 1rem;
-}
-img.example-image {
-  max-width: 100%;
-}
-.row.no-padding [class*=col-] {
-  padding: 0;
-}
-.portfolio-item img:hover {
-  transform: scale(1.3);
-  cursor: zoom-in;
-}
-.portfolio-item img {
-  transition: transform .4s ease;
-}
-.portfolio-item {
-  overflow: hidden;
-}
-
-/*============= PRICING SECTION =============*/
-
-.pricing-column {
-  background-color: white;
-  padding: 2rem;
-  border-top: .2rem solid #1ebba3;
-  box-shadow: 0 0 .8rem rgba(0, 0, 0, 0.075);
-  transition: transform .7s ease;
-  overflow: hidden;
-  position: relative;
-}
-.pricing-column:hover {
-  transform: scale(1.1);
-}
-.pricing-column h3 {
-  padding: 1rem;
-  border-bottom: .1rem solid rgba(0, 0, 0, 0.1);
-}
-.pricing-column p {
-  opacity: .8;
-  margin-top: 1.3rem;
-}
-.pricing-column h4 {
-  font-size: 1.1rem;
-  padding: .4rem;
-}
-.pricing-column .item {
-  font-weight: 700;
-}
-.pricing-column h1 {
-  padding: .8rem 0;
-}
-.ribbon {
-  background-color: #6c757d;
-  color: white;
-  width: 10rem;
-  height: 2rem;
-  font-size: .8rem;
-  font-weight: 700;
-  padding-top: .4rem;
-  position: absolute;
-  right: -2.8rem;
-  top: 1.6rem;
-  transform: rotate(45deg);
-  box-shadow: 0 0 .2rem rgba(0, 0, 0, 0.25);
-}
 
 /*============= TEAM SECTION FIXED BG IMG LIGHT =============*/
 
@@ -1074,6 +1011,8 @@ footer {
 
 footer .row {
   background-color: rgba(57, 63, 70, 0.85);
+  /*background-image: url(images/lighting-down.jpg);*/
+  width: 100%;
   padding: 1rem;
   justify-content: center!important;
 }
