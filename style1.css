@@ -327,7 +327,7 @@ copied the hamburger sign from the scss*/
 }
 .home-inner {
   background-image: url(images/lighting-down.jpg);
-  /*position: fixed;*/
+  position: fixed;
   /*display: table;*/
   top: 0;
   left: 0;
@@ -1019,7 +1019,10 @@ footer {
 footer .row {
   background-color: rgba(57, 63, 70, 0.85);
   /*background-image: url(images/lighting-down.jpg);*/
-  /*width: 100%;*/
+  /*background-size: cover;*/
+  /*filter: brightness(50%);*/
+  width: 100%;
+  margin: 0;
   padding: 1rem 0;
   justify-content: center!important;
 }
