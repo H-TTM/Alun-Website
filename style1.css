@@ -582,13 +582,13 @@ body {
   text-align: center;
 }
 
-*, ::after, ::before {
+/**, ::after, ::before {
   -webkit-box-sizing: content-box !important;
     -moz-box-sizing: content-box !important;
-    box-sizing: content-box !important;
+    box-sizing: content-box !important;*/
 /*    This was added as border-box was being inherited by scss and messing everything up 
     leaving a blank line on the right hand side*/
-}
+/*}*/
 
 .pages-content-grey h2 {
   /*line-height: 1.6;*/
@@ -1012,8 +1012,8 @@ footer {
 footer .row {
   background-color: rgba(57, 63, 70, 0.85);
   /*background-image: url(images/lighting-down.jpg);*/
-  width: 100%;
-  padding: 1rem;
+  /*width: 100%;*/
+  padding: 1rem 0;
   justify-content: center!important;
 }
 footer img {
