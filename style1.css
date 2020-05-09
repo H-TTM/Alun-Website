@@ -428,6 +428,7 @@ copied the hamburger sign from the scss*/
 
 body {
   width: 100%;
+  padding: 0rem;
 }
 
 .main-body {
