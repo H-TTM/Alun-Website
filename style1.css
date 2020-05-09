@@ -426,6 +426,9 @@ copied the hamburger sign from the scss*/
 
 /*============= HOME-PAGE SECTION =============*/
 
+body {
+  width: 100%;
+}
 
 .main-body {
   background-color: white;
