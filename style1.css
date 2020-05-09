@@ -3,11 +3,48 @@
 
 /*------------- SELF CREATED -----------------*/
 
-
-.bg-purple {
-   background-color: #2b073b;
+.column {
+  float: left;
+  width: 31%;
+  padding: 5px;
+  box-sizing: border-box;
 }
 
+
+.column img {
+  /*height: 150px;*/
+  width: 150px;
+
+  height: calc(80px + (150 - 80) * ((100vw - 300px) / (1600 - 300)));
+  width: calc(80px + (150 - 80) * ((100vw - 300px) / (1600 - 300)));
+  /*font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));*/
+
+}
+
+  font-size: calc(14px + (25 - 14) * ((100vw - 300px) / (1600 - 300)));
+  /*font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));*/
+
+.image img {
+  width: 100%;
+}
+
+.image h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.bg-grey {
+   background-color: #5a5757;
+}
+
+.navbar-brand {
+  font-size: calc(14px + (25 - 14) * ((100vw - 300px) / (1600 - 300)));
+  /*font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));*/
+
+}
 .navbar-brand img {
   height: 2.5rem;
 }
@@ -20,12 +57,12 @@
 }
 
 a {
-  color: #2b073b;
+  color: #2dafd4;
 }
 
 a:hover {
-    color: #2b073b;
-    text-decoration: underline;
+    color: #5996ae;
+    /*text-decoration: underline;*/
 }
 
 /*--- Extra Bootstrap Column Padding --*/
@@ -225,6 +262,24 @@ body {
 /*.navbar-brand img {
   height: 2rem;
 }*/
+
+
+.navbar-fixed-top {
+  margin-top: 3.5rem;
+  position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+.navbar-fixed-bottom {
+
+}
+
+.navbar-nav li {
+  color: white;
+}
 .svg-inline--fa.fa-w-14 {
   color: white;
   font-size: 1.6rem;
@@ -233,12 +288,13 @@ body {
   padding-right: .8rem;
 }
 .navbar-nav .nav-link {
-  color: rgba(255,255,255,.5);
+  color: white;
   padding-top: .8rem;
 }
+
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link:hover {
-  color: white;
+  color: #2dafd4;
 }
 .navbar .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
@@ -253,9 +309,6 @@ copied the hamburger sign from the scss*/
 /**This enabled me to remove dependcy from navbar-dark and 
 copied the hamburger sign from the scss*/
 
-.bg-purple {
-   background-color: #2b073b;
-}
 
 .navbar.solid {
   background: rgba(0, 0, 0, 0.7)!important;
@@ -272,12 +325,14 @@ copied the hamburger sign from the scss*/
   height: 100%;
 }
 .home-inner {
-  background-image: url(img/purplecity.jpg);
-  position: fixed;
-  display: table;
+  background-image: url(images/lighting-down.jpg);
+  /*position: fixed;*/
+  /*display: table;*/
   top: 0;
   left: 0;
   width: 100%;
+  /*width: 100vh;*/
+  /*height: 100vh;*/
   height: 100%;
   background-size: cover;
   background-position: center center;
@@ -290,65 +345,33 @@ copied the hamburger sign from the scss*/
   width: 100%;
   max-width: 100%;
   position: absolute;
-  top: 38%;
+  top: 30%;
   z-index: 1;
 }
 .caption h1 {
   color: white;
-  font-size: 4.5rem;
-  /*text-transform: uppercase;*/
+  font-size: calc(22px + (90 - 18) * ((100vw - 300px) / (1600 - 300)));
+  /*font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));*/
   font-weight: 700;
   letter-spacing: .3rem;
   text-shadow: .1rem .1rem .8rem black;
   padding-bottom: 1rem;
 }
+
+  
+
+
 .caption h3 {
   color: white;
-  font-size: 2.5rem;
+  font-size: calc(15px + (50 - 15) * ((100vw - 300px) / (1600 - 300)));
+  /*font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));*/
   /*text-transform: uppercase;*/
   font-weight: 400;
   text-shadow: .1rem .1rem .5rem black;
   padding-bottom: 2rem;
 }
 
-@media screen and (max-width: 650px) {
-   div.caption h1 {;
-   margin: 0 auto;
-    text-align: center;
-    font-size: 2.5rem;
-    padding-bottom: 2rem;
-   max-width: 80%;
-  }
-}
 
-@media screen and (max-width: 650px) {
-   div.caption h3 {;
-    text-align: center;
-    font-size: 1.6rem;
-   line-height: 180%;
-   max-width: 80%;
-   margin: 0 auto;
-  }
-}
-
-@media screen and (max-width: 450px) {
-   div.caption h1 {;
-   margin: 0 auto;
-   text-align: center;
-   font-size: 2rem;
-   padding-bottom: 1rem;
-   max-width: 80%;
-  }
-}
-
-@media screen and (max-width: 450px) {
-   div.caption h3 {;
-   font-size: 1.3rem;
-   line-height: 180%;
-   max-width: 80%;
-   margin: 0 auto;
-  }
-}
 
 
 .btn-lg {
@@ -364,9 +387,10 @@ copied the hamburger sign from the scss*/
 /*TAKEN FROM FIXED.CSS -START HERE*/
 /*--- Fixed Landing Page Section --*/
 .landing {
+  padding-top: 3rem;
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 85vh;
   display: table;
   z-index: -1;
 }
@@ -404,10 +428,16 @@ copied the hamburger sign from the scss*/
 
 /*============= HOME-PAGE SECTION =============*/
 
+body {
+  margin:0; /* remove default margin */
+  padding:0; /* remove default padding */
+  width:100%; /* take full browser width */
+  height:100%; /* take full browser height*/
+}
 
 .main-body {
-  background-color: #f0f2f4;
-  color: #2b073b;
+  background-color: white;
+  color: #5a5757;
   padding-bottom: 1rem;
 /*    background-color: #2b073b;
     color: white;*/
@@ -418,11 +448,16 @@ copied the hamburger sign from the scss*/
   margin-left: 4rem;
   margin-right: 4rem;
   font-weight: bold;
+  /*font-size: calc(30px + (70 - 30) * ((100vw - 300px) / (1600 - 300)));*/
+  /*font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));*/
+
 }
 
 .main-body h3 {
-  font-size: 1.25rem;
-  margin-bottom: 0rem;
+/*  font-size: 1.45rem;*/
+  font-size: calc(15px + (35 - 15) * ((100vw - 300px) / (1600 - 300)));
+  /*font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));*/
+  margin-bottom: 1rem;
 }
 
 .main-body .narrow {
@@ -467,7 +502,7 @@ copied the hamburger sign from the scss*/
   border: 2px solid #2b073b;
   color: #2b073b;
   /*color: #f0f2f4;*/
-  text-decoration: underline;
+  /*text-decoration: underline;*/
 }
 
 
@@ -482,8 +517,13 @@ copied the hamburger sign from the scss*/
   padding: 0 0 2rem 0!important;
 }
 
+.icon-col img {
+  height: 150px;
+  width: 150px;
+}
 
 /*============= BLOG-POST SECTION =============*/
+
 
 
 .blog-post-wrap {
@@ -520,7 +560,7 @@ copied the hamburger sign from the scss*/
   background-image: url('img/containers.jpg');
 }
 
-/*============= FEATURES SECTION =============*/
+/*============= PAGES SECTION =============*/
 
 
 .pages-content {
@@ -530,52 +570,93 @@ copied the hamburger sign from the scss*/
   line-height: 160%;
 }
 
+.pages-content-grey {
+  background-color: #5a5757;
+  color: #2dafd4;
+  -webkit-box-sizing: content-box !important;
+    -moz-box-sizing: content-box !important;
+    box-sizing: content-box !important;
+  box-sizing: inherit;
+  max-width: 100%;
+  margin: 0 auto;
+  word-spacing: 1px;
+  height: 15vh;
+  text-align: center;
+}
 
+/**, ::after, ::before {
+  -webkit-box-sizing: content-box !important;
+    -moz-box-sizing: content-box !important;
+    box-sizing: content-box !important;*/
+/*    This was added as border-box was being inherited by scss and messing everything up 
+    leaving a blank line on the right hand side*/
+/*}*/
+
+.pages-content-grey h2 {
+  /*line-height: 1.6;*/
+  font-size: calc(14px + (40 - 14) * ((100vw - 300px) / (1600 - 300)));
+  line-height: calc(1.6em + (1.2 - 1.6) * ((100vw - 300px)/(1600 - 300)));
+  /*font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));*/
+
+}
 .pages-content-index {
   padding-top: 2.7rem;
   text-align: center;
 }
-/*
-.pages-content-invert{
-  background-color: #2b073b;
-  color: #f0f2f4; 
-  max-width: 100%;
-}*/
 
-.blog-image-box img{
-  float: left;
-  /*max-height: 335px;*/
-  max-width:33%;
-  overflow: auto;
+.pages-service {
+  width: 19rem;
+  padding: 1rem 3.5%;
+}
+
+.pages-service h3 {
+  margin-bottom: 0rem!important;
+  /*font-size: 2vw;*/
+  font-size: calc(20px + (30 - 20) * ((100vw - 300px) / (1600 - 300)));
+  /*font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));*/
+}
+
+.pages-service p {
+  font-size: calc(11px + (18 - 11) * ((100vw - 300px) / (1600 - 300)));
 }
 
 
-
-
-.blog-column {
-  background-color: white;
-  padding: 0rem!important;
-  border-top: .2rem solid #2b073b;
-  box-shadow: 0 0 .8rem rgba(0, 0, 0, 0.075);
-  transition: transform .7s ease;
-  overflow: hidden;
-  position: relative;
-  margin: 2rem 0rem;
-  color: #2b073b;
-  max-height: 335px;
-  text-align: center;
+.pages-service-link .fa-4x {
+  font-size: calc(40px + (75 - 40) * ((100vw - 300px) / (1600 - 300)));
+}
+.pages-service:hover {
+  -webkit-transform: scale(1.1); /* Saf3.1+, Chrome */
+     -moz-transform: scale(1.1); /* FF3.5+ */
+      -ms-transform: scale(1.1); /* IE9 */
+       -o-transform: scale(1.1); /* Opera 10.5+ */
+          transform: scale(1.1);
 }
 
-.blog-text-box {
-  margin-left: 33%;
-  line-height: 200%;
-  font-size: 120%;
+
+.pages-service-link {
+  color: #5a5757;
 }
 
-.blog-text-box h3{
-  line-height: 150%;
-  padding-bottom: 1rem;
+
+.pages-service-link:hover{
+  color: #5a5757;
+  text-decoration: none!important;
 }
+
+.pages-service-link:hover span {
+  color: #2dafd4;
+}
+
+.pages-service-link span {
+  margin: 1.2rem;
+}
+
+
+.fa-4x {
+  margin: .8rem;
+}
+
+
 
 /*THIS IS FOR MOBILE AND TABLET DEVICES TO MAKE IT MORE READABLE*/
 @media screen and (max-width: 1030px) {
@@ -791,13 +872,6 @@ blockquote .svg-inline--fa {
   color: #2b073b;
 }
 
-/*.blog-column p {
-    padding: 1rem 0 1rem 0;
-    width: 80%;
-    margin: 0 auto;
-    line-height: 2.2em;
-}*/
-
 
 .blog-narrow {
   width: 80%;
@@ -831,74 +905,15 @@ blockquote .svg-inline--fa {
     font-size: 1.2rem;
 }
 
-/*============= PORTFOLIO SECTION =============*/
 
-.row.padding {
-  padding: 2rem 0 1rem;
-}
-img.example-image {
-  max-width: 100%;
-}
-.row.no-padding [class*=col-] {
-  padding: 0;
-}
-.portfolio-item img:hover {
-  transform: scale(1.3);
-  cursor: zoom-in;
-}
-.portfolio-item img {
-  transition: transform .4s ease;
-}
-.portfolio-item {
-  overflow: hidden;
+
+/*============= SUB-HEADER SECTION =============*/
+
+.sub-header {
+  width: 100%;
+  padding-top: 5rem;
 }
 
-/*============= PRICING SECTION =============*/
-
-.pricing-column {
-  background-color: white;
-  padding: 2rem;
-  border-top: .2rem solid #1ebba3;
-  box-shadow: 0 0 .8rem rgba(0, 0, 0, 0.075);
-  transition: transform .7s ease;
-  overflow: hidden;
-  position: relative;
-}
-.pricing-column:hover {
-  transform: scale(1.1);
-}
-.pricing-column h3 {
-  padding: 1rem;
-  border-bottom: .1rem solid rgba(0, 0, 0, 0.1);
-}
-.pricing-column p {
-  opacity: .8;
-  margin-top: 1.3rem;
-}
-.pricing-column h4 {
-  font-size: 1.1rem;
-  padding: .4rem;
-}
-.pricing-column .item {
-  font-weight: 700;
-}
-.pricing-column h1 {
-  padding: .8rem 0;
-}
-.ribbon {
-  background-color: #6c757d;
-  color: white;
-  width: 10rem;
-  height: 2rem;
-  font-size: .8rem;
-  font-weight: 700;
-  padding-top: .4rem;
-  position: absolute;
-  right: -2.8rem;
-  top: 1.6rem;
-  transform: rotate(45deg);
-  box-shadow: 0 0 .2rem rgba(0, 0, 0, 0.25);
-}
 
 /*============= TEAM SECTION FIXED BG IMG LIGHT =============*/
 
@@ -982,17 +997,30 @@ blockquote .svg-inline--fa {
   border-top: .05rem solid #1EBBA3;
 }
 
-/*============= CONTACT SECTION =============*/
+/*============= FOOTER SECTION =============*/
 
 footer {
-  background: url('img/footer/footer.png') no-repeat;
+  /*background: url('img/footer/footer.png') no-repeat;*/
   /*background-color: #40474e;*/
   background-size: cover;
   color: white;
+  justify-content: center!important;
 }
+
+.footer-blue {
+  color: #2dafd4;
+}
+
 footer .row {
   background-color: rgba(57, 63, 70, 0.85);
-  padding: 1rem 2rem 3rem;
+  /*background-image: url(images/lighting-down.jpg);*/
+  /*width: 100%;*/
+  padding: 1rem 0;
+  justify-content: center!important;
+}
+
+.row-text {
+  width: 90%;
 }
 footer img {
   height: 2rem;
@@ -1003,14 +1031,23 @@ footer a {
 }
 footer svg.svg-inline--fa {
   font-size: 1.6rem;
-  margin: 1.2rem .5rem 0 0;
+  /*margin: 1.2rem .5rem 0 0;*/
 }
 footer svg.svg-inline--fa:hover {
-  color: #1ebba3!important;
+  color: #2dafd4!important;
 }
 footer h3 {
   text-transform: uppercase;
   margin: 1.5rem 0;
+}
+
+footer h5 {
+  line-height: 1.4;
+  font-size: calc(17px + (25 - 17) * ((100vw - 300px) / (1600 - 300)));
+}
+
+footer p {
+  line-height: 1.8;
 }
 /*--- Contact Form --*/
 .form-group {
