@@ -15,7 +15,8 @@ height: 73vh;
 min-width: 100%;
 min-height: 60vh;
 position: relative;
-margin-top: 3rem;
+/*margin-top: 3rem;*/
+margin-top: calc(30px + (65 - 30) * ((100vw - 300px) / (1600 - 300)));
 }
 
 .landing-page::before {
@@ -66,8 +67,8 @@ align-content: center;
 
 .landing-page-title h1 {
   color: white;
-  font-size: 8.5vmin;
-  /*font-size: calc(22px + (90 - 18) * ((100vw - 300px) / (1600 - 300)));*/
+  /*font-size: 8.5vmin;*/
+  font-size: calc(22px + (65 - 18) * ((100vw - 300px) / (1600 - 300)));
   /*font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));*/
   font-weight: 700;
   letter-spacing: .3rem;
@@ -80,8 +81,8 @@ align-content: center;
 
 .landing-page-sub-title h3 {
   color: white;
-  font-size: 6.5vmin;
-  /*font-size: calc(15px + (50 - 15) * ((100vw - 300px) / (1600 - 300)));*/
+  /*font-size: 6.5vmin;*/
+  font-size: calc(15px + (55 - 15) * ((100vw - 300px) / (1600 - 300)));
   /*font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));*/
   /*text-transform: uppercase;*/
   font-weight: 400;
@@ -90,23 +91,43 @@ align-content: center;
 }
 
 
-/*LANDING PAGE- CONTACT FORM*/
+/****************LANDING PAGE- CONTACT FORM*****************/
 
 .landing-page-contact {
   height: 20vh;
 }
 
 .landing-page-contact .column {
-  padding-top: 2vh;
-  padding-bottom: 2vh;
+  /*padding-top: 2vh;*/
+  padding-top: calc(15px + (15 - 15) * ((100vw - 300px) / (1600 - 300)));
+   padding-bottom: calc(15px + (15 - 15) * ((100vw - 300px) / (1600 - 300)));
+  /*padding-bottom: 2vh;*/
 }
 
 .landing-page-contact .vl {
+  /*height: 6rem;*/
+  height: calc(42px + (120 - 42) * ((100vw - 300px) / (1600 - 300)));
+  margin-left: -3px;
   margin-top: 3vh;
   margin-bottom: 3vh; 
+  left: 50%;
+  top: 0;
+  border-left: 2px solid #2dafd4;
+}
+  
+
+  /*calc(15px + (55 - 15) * ((100vw - 300px) / (1600 - 300)));*/
+
+  
+
+
+.fa-3x {
+  font-size: calc(20px + (55 - 20) * ((100vw - 300px) / (1600 - 300)));
 }
 
-
+.landing-page-contact .column h4{
+  font-size: calc(8px + (30 - 8) * ((100vw - 300px) / (1600 - 300)));
+}
 /*LANDING PAGE - SERVICES PAGE*/
 
 
@@ -156,7 +177,7 @@ opacity: 0.2;
 .column {
   float: left;
   width: 33.3%;
-  padding: 5px;
+  /*padding: 5px;*/
   box-sizing: border-box;
 }
 
@@ -176,14 +197,9 @@ opacity: 0.2;
   border-right: 4px solid blue;
 }*/
 
-.vl {
-  border-left: 2px solid #2dafd4;
-  height: 6rem;
-  /*position: absolute;*/
-  left: 50%;
-  margin-left: -3px;
-  top: 0;
-}
+/*.vl {
+  
+}*/
 
 .hl {
   border-top: 2px solid #2dafd4;
@@ -223,6 +239,12 @@ opacity: 0.2;
 
 .bg-grey {
    background-color: #5a5757;
+   color: white;
+}
+
+.bg-grey p {
+  font-size: calc(14px + (25 - 14) * ((100vw - 300px) / (1600 - 300)));
+   margin: 0rem;
 }
 
 .navbar-brand {
@@ -246,7 +268,8 @@ a {
 }
 
 a:hover {
-    color: #5996ae;
+    /*color: #5996ae;*/
+    color: white;
     /*text-decoration: underline;*/
 }
 
@@ -471,7 +494,7 @@ body {
   font-size: 1.6rem;
 }*/
 .navbar-nav li {
-  padding-right: .8rem;
+  padding-right: .8rem;f
 }
 .navbar-nav .nav-link {
   color: white;
