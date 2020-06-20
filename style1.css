@@ -96,7 +96,7 @@ align-content: center;
 
 .landing-page-contact {
   height: 20vh;
-  height: calc(70px + (160 - 70) * ((100vw - 300px) / (1600 - 300)));
+  height: calc(80px + (160 - 80) * ((100vw - 300px) / (1600 - 300)));
 }
 
 .landing-page-contact .column {
