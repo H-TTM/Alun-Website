@@ -128,7 +128,11 @@ align-content: center;
 }
 
 .landing-page-contact .column h4{
-  font-size: calc(8px + (30 - 8) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc(10px + (30 - 10) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.landing-page-contact .column h5{
+  font-size: calc(7px + (30 - 7) * ((100vw - 300px) / (1600 - 300)));
 }
 /*LANDING PAGE - SERVICES PAGE*/
 
