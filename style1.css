@@ -276,7 +276,7 @@ a {
 a:hover {
     /*color: #5996ae;*/
     color: white;
-    /*text-decoration: underline;*/
+    text-decoration: none;
 }
 
 /*--- Extra Bootstrap Column Padding --*/
@@ -671,9 +671,11 @@ body {
 
 .main-body h3 {
 /*  font-size: 1.45rem;*/
-  font-size: calc(15px + (35 - 15) * ((100vw - 300px) / (1600 - 300)));
+  /*font-size: calc(15px + (35 - 15) * ((100vw - 300px) / (1600 - 300)));*/
+  font-size: calc(20px + (30 - 20) * ((100vw - 300px) / (1600 - 300)));
   /*font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));*/
-  margin-bottom: 1rem;
+  /*margin-bottom: 1rem;*/
+  margin: 0 0rem 1rem 0rem;
 }
 
 .main-body .narrow {
@@ -848,10 +850,13 @@ body {
   /*font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));*/
 }
 
-.pages-service p {
+/*.pages-service p {
+  font-size: calc(11px + (18 - 11) * ((100vw - 300px) / (1600 - 300)));
+}*/
+
+ p {
   font-size: calc(11px + (18 - 11) * ((100vw - 300px) / (1600 - 300)));
 }
-
 
 .pages-service-link .fa-4x {
   font-size: calc(40px + (75 - 40) * ((100vw - 300px) / (1600 - 300)));
@@ -1249,13 +1254,14 @@ footer {
 
 
 footer .row {
-  background-color: rgba(57, 63, 70, 0.85);
+  background-color: #5a5757;
+  /*background-color: rgba(57, 63, 70, 0.85);*/
   /*background-image: url(images/lighting-down.jpg);*/
   /*background-size: cover;*/
   /*filter: brightness(50%);*/
   width: 100%;
   margin: 0;
-  padding: 1rem 0;
+  /*padding: 1rem 0;*/
   justify-content: center!important;
 }
 
@@ -1278,7 +1284,8 @@ footer svg.svg-inline--fa:hover {
 }
 footer h3 {
   text-transform: uppercase;
-  margin: 1.5rem 0;
+  margin: 1rem 0 .5rem 0;
+  font-size: calc(20px + (30 - 20) * ((100vw - 300px) / (1600 - 300)));
 }
 
 footer h5 {
