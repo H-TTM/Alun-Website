@@ -870,9 +870,13 @@ h4 {
   font-size: calc(15px + (25 - 15) * ((100vw - 300px) / (1600 - 300)));
   line-height: calc(25px + (35 - 25) * ((100vw - 300px) / (1600 - 300)));
 }
+
 .pages-service-link .fa-4x {
   font-size: calc(40px + (75 - 40) * ((100vw - 300px) / (1600 - 300)));
+  display: block;
+  margin: 1rem auto;
 }
+
 .pages-service:hover {
   -webkit-transform: scale(1.1); /* Saf3.1+, Chrome */
      -moz-transform: scale(1.1); /* FF3.5+ */
