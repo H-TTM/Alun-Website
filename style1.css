@@ -11,7 +11,7 @@
 
 .landing-page {
 width: 100%;
-height: 73vh;
+height: 68vh;
 /*height: calc(300px + (680 - 300) * ((100vw - 300px) / (1600 - 300)));*/
 min-width: 100%;
 min-height: 60vh;
@@ -114,7 +114,7 @@ align-content: center;
 
 
 .fa-3x {
-  font-size: calc(20px + (55 - 20) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc(20px + (75 - 20) * ((100vw - 300px) / (1600 - 300)));
 }
 
 .landing-page-contact .column h4{
@@ -825,6 +825,14 @@ body {
   color: white;
 }
 
+.pages-content-index-invert h1 {
+    padding: .1rem 0;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    font-weight: normal;
+    font-size: calc(15px + (50 - 15) * ((100vw - 300px) / (1600 - 300)))
+}
+
 .pages-content-index-invert h3{
   margin-bottom: .5rem;
 }
@@ -856,9 +864,9 @@ body {
 
 .pages-service h3 {
   margin-bottom: 0rem!important;
-  /*font-size: 2vw;*/
+  /*font-size: 2vw;
   font-size: calc(20px + (30 - 20) * ((100vw - 300px) / (1600 - 300)));
-  /*font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));*/
+  /*font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));
 }
 
 /*.pages-service p {
@@ -890,6 +898,8 @@ h4 {
   display: block;
   margin: 1rem auto;
 }
+
+
 
 .pages-service:hover {
   -webkit-transform: scale(1.1); /* Saf3.1+, Chrome */
