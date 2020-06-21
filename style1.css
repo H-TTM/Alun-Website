@@ -830,7 +830,7 @@ body {
     margin-left: 4rem;
     margin-right: 4rem;
     font-weight: normal;
-    font-size: calc(12px + (50 - 12) * ((100vw - 300px) / (1600 - 300)))
+    font-size: calc(10px + (50 - 10) * ((100vw - 300px) / (1600 - 300)))
 }
 
 .pages-content-index-invert h3{
