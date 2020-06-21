@@ -21,7 +21,8 @@ margin-top: calc(30px + (65 - 30) * ((100vw - 300px) / (1600 - 300)));
 }
 
 .landing-page::before {
-background-image: url(images/lighting-down.jpg);
+/*background-image: url(images/lighting-down.jpg);*/
+background-image: url(images/Van-image.jpg);
 background-size: cover;
 content: "";
 display: block;
@@ -654,7 +655,7 @@ body {
 .main-body {
   background-color: white;
   color: #5a5757;
-  padding-bottom: 1rem;
+  /*padding-bottom: 1rem;*/
 /*    background-color: #2b073b;
     color: white;*/
 }
@@ -824,8 +825,15 @@ body {
 
 }
 .pages-content-index {
-  padding-top: 2.7rem;
+  padding: 1rem 0 1rem 0;
   text-align: center;
+}
+
+.pages-content-index-invert {
+  padding: 1rem 0 1rem 0;
+  text-align: center;
+  background-color: #5a5757;
+  color: white;
 }
 
 .pages-service {
@@ -858,6 +866,10 @@ body {
   font-size: calc(11px + (18 - 11) * ((100vw - 300px) / (1600 - 300)));
 }
 
+h4 {
+  font-size: calc(15px + (25 - 15) * ((100vw - 300px) / (1600 - 300)));
+  line-height: calc(25px + (35 - 25) * ((100vw - 300px) / (1600 - 300)));
+}
 .pages-service-link .fa-4x {
   font-size: calc(40px + (75 - 40) * ((100vw - 300px) / (1600 - 300)));
 }
