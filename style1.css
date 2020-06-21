@@ -21,8 +21,8 @@ margin-top: calc(30px + (65 - 30) * ((100vw - 300px) / (1600 - 300)));
 }
 
 .landing-page::before {
-/*background-image: url(images/lighting-down.jpg);*/
-background-image: url(images/Van-image.jpg);
+background-image: url(images/lighting-down.jpg);
+/*background-image: url(images/Van-image.jpg);*/
 background-size: cover;
 content: "";
 display: block;
@@ -896,14 +896,14 @@ h4 {
   color: #2dafd4;
 }
 
-.pages-service-link span {
+/*.pages-service-link span {
   margin: 1.2rem;
-}
+}*/
 
 
-.fa-4x {
+/*.fa-4x {
   margin: .8rem;
-}
+}*/
 
 
 
