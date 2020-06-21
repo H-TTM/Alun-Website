@@ -831,6 +831,8 @@ body {
 
 .pages-content-index-invert p{
   margin: .25rem 0;
+  font-size: calc(9px + (18 - 9) * ((100vw - 300px) / (1600 - 300)));
+
 }
 
 .blue-invert {
