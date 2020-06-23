@@ -258,6 +258,7 @@ opacity: 0.2;
 
 .navbar-brand {
   font-size: calc(14px + (25 - 14) * ((100vw - 300px) / (1600 - 300)));
+  padding: 0;
   /*font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));*/
 
 }
