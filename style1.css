@@ -192,6 +192,24 @@ opacity: 0.2;
     padding:  calc(5px + (15 - 5) * ((100vw - 300px) / (1600 - 300))) calc(2px + (15 - 2) * ((100vw - 300px) / (1600 - 300)));
 }
 
+@media screen and (max-width: 700px) {
+  .column-invert {
+    width: 100%;
+    max-height: 25rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .column-invert p {
+    font-size: 15px!important;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .button1 {
+    font-size: 15px!important;
+  }
+}
 
 /*.column-middle {
   border-left: 4px solid blue;
@@ -205,9 +223,9 @@ opacity: 0.2;
 .hl {
   border-top: 2px solid #2dafd4;
   width: 20vw;
-  /*position: absolute;*/
-  /*left: 50%;*/
-  /*margin-left: -3px;*/
+/*  position: absolute;
+  left: 50%;
+  margin-left: -3px;*/
   margin: 1rem auto;
   top: 0;
 }
@@ -1341,6 +1359,30 @@ footer h5 {
 footer p {
   line-height: 1.8;
 }
+
+/**------Contact page -------**/
+
+/*.contact-address-column {
+  margin: 1rem 3.5%;
+  width: 100px;
+  flex-wrap: wrap;
+}*/
+
+.contact-address-column {
+    width: 45%;
+    border-radius: 2%;
+    min-height: 50vh;
+    margin: 0 auto;
+}
+
+
+@media screen and (max-width: 600px) {
+  .contact-address-column {
+    width: 100%;
+  }
+}
+
+
 /*--- Contact Form --*/
 .form-group {
   margin-bottom: 1.3rem;
@@ -1366,6 +1408,14 @@ input.btn {
 hr.socket {
   border-top: .2rem solid #666b71;
   width: 100%;
+}
+
+iframe {
+    border: 0;
+    width: 100%;
+    height: 100%;
+    /*padding: 1rem;*/
+
 }
 
 /*============= TOP SCROLL =============*/
