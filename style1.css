@@ -195,7 +195,7 @@ opacity: 0.2;
 @media screen and (max-width: 700px) {
   .column-invert {
     width: 100%;
-    max-height: 25rem;
+    max-height: 26rem;
   }
 }
 
